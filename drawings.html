@@ -41,14 +41,15 @@ font-size: 30px;
 }
 
 .sidenav a:hover {
+	
   color:#2196F3;
 }
 
 .main {
-  margin-left: 300px; /* Same width as the sidebar + left position in px */
+  margin-left: 260px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-	
+	background: 	#238130238;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,7 +81,7 @@ img {vertical-align: middle;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -22px;
   color: black;
   font-weight: bold;
@@ -98,7 +99,7 @@ img {vertical-align: middle;
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: 	#FFB6C1;
+  background-color: #f1f1f1;
   color: black;
 }
 	
@@ -110,11 +111,12 @@ img {vertical-align: middle;
 <div class="sidenav">
 	
 	<a href="index.html">Emma Eichorn</a><p>
-  <a href="Drawings.html">Works on paper</a><p>
-  <a href="paintings.html">Paintings</a><p>
-  <a href="#clients">Digital Media</a><p>
-	<a href="#About">About</a><p>
-  <a href="#contact">Contact</a>
+	  <a href="paintings.html">Selected Paintings</a><p>
+  <a href="drawings.html">Drawings</a><p>
+
+
+	
+  <a href="#contact">Contact/Info</a>
 </div>
 
 <div class="main">
@@ -123,39 +125,40 @@ img {vertical-align: middle;
 	
 <div class="slideshow-container">
   <div class="mySlides1">
-    <img src="day dreamer.jpg" style="width:60%">
+    <img src="Eichorn_Emma_A-sweet-and-unfortunate-attachment_60x55_oiloncanvas-.jpeg" style="width:60%">
   </div>
 
   <div class="mySlides1">
-    <img src="a bleassing and a curse_pigment and color pencil.jpg" style="width:60%">
+    <img src="Eichorn_Emma_Fountain, 100cmx70cm, OIl and Acrylic on Canvas 2021.jpg" style="width:50%">
+  </div>
+	
+	  <div class="mySlides1">
+    <img src="Nesting tendencies_oil on canvas.jpg" style="width:50%">
   </div>
 
-  <div class="mySlides1">
-    <img src="DSC_3788.jpg" style="width:60%">
-  </div>
+ 
 	
-	 <div class="mySlides1">
-    <img src="Eichorn_Downey_untitled graphite.jpg" style="width:60%">
-  </div>
-	
-	<div class='mySLide1">
-		    <img src="cropped with boarder.jpg"style="width:60%">
-  </div>
+
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
+
 	
   
+
  
+
 </div>  
 <script>
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
+
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
+
 function showSlides(n, no) {
   var i;
   var x = document.getElementsByClassName(slideId[no]);
