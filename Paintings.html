@@ -244,6 +244,19 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+	
+	document.addEventListener('keydown', (event) => {
+  /* More to come */
+})
+	
+	document.addEventListener('keydown', (event) => {
+  if(event.code === 'ArrowLeft' || event.code === 'ArrowUp') {
+    /* Previous slide */
+  }
+  if(event.code === 'ArrowRight' || event.code === 'ArrowDown') {
+    /* Next slide */
+  }
+})
 </script>
 </body>
 </html> 
