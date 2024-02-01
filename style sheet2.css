@@ -5,6 +5,29 @@
 		
         }
 
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
         figure {
             font-size: 10px;
             font-family: Courier New;
@@ -14,56 +37,7 @@
             text-align: center;
         }
 
-        .sidenav {
-            width: 250px;
-            position: fixed;
-            z-index: 1;
-            top: 50px;
-            left: 10px;
-            overflow-x: hidden;
-            padding: 8px 0;
-            color: #616161;
-            font-family: narly-outline, sans-serif;
-            font-weight: 400;
-            font-size: 30px;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 768px) {
-            .sidenav {
-                width: 100%; /* Make the sidebar occupy full width on mobile */
-                position: static; /* Reset position for mobile */
-                top: 0; /* Reset top position for mobile */
-                left: 0; /* Reset left position for mobile */
-                padding: 10px; /* Adjust padding for mobile */
-                text-align: center; /* Center the items in the sidebar for mobile */
-            }
-        }
-
-        /* Additional desktop styles go here */
-
-        .sidenav a:link {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #616161;
-            display: block;
-        }
-
-        .sidenav a:visited {
-            color: #616161;
-        }
-
-        .sidenav a:hover {
-            color: #616161;
-            background-color: #f1f1f1;
-        }
-
-        .main {
-            margin-left: 260px; /* Same width as the sidebar + left position in px */
-            font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
+       
 
         img {
             max-width: 100%; /* Ensure images don't overflow their containers on mobile */
