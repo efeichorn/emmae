@@ -122,8 +122,20 @@ style-type: none
 
 
 
-* {
-  box-sizing: border-box;
+a:link {
+  text-decoration: none; /* hyperlink styling */
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 	
     </style>
