@@ -18,7 +18,10 @@
   width: 25%;
   float: left;
   padding: 15px;
-  border: 1px solid red;
+   color: #616161;
+ font-family: narly-outline, sans-serif;
+font-weight: 400;
+ font-size: 30px;
 }
 
 .main {
