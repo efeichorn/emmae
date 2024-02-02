@@ -103,6 +103,7 @@ color: #616161;
 }
 
 .slideshow-container {
+  width: 80%;
   text-align: center;
   position: static;
   padding-top: 70px; 
