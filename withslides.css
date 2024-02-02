@@ -1,0 +1,217 @@
+.nav {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 14pt;
+  background-color: none;
+  display: list-item;
+  text-align: left;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  top:50px;
+  padding: 50px;
+  width: 10%;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.titleofpage{
+  font-family: 'Lora', serif;
+  font-size: 17pt;
+  color:salmon;
+  padding-top: 30px;
+  top: 0;
+  left: 0;
+  width: 15%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content:center;
+  list-style-type:none;
+  background-color:none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        display: none;
+    }
+    .titleofpage{
+        display:none;
+    }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  padding: 0px 0px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+a {
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+a:link {
+  color:salmon;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+a:visited {
+  color:salmon;
+  text-decoration: none;
+  background-color: none;
+}
+
+a:hover {
+  color:salmon;
+  text-decoration: none;
+  font-style:italic;
+  background-color: slategray;
+}
+
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.slideshow-container {
+  text-align: center;
+  position: static;
+  padding-top:10px;
+  height: inherit;
+}
+
+.mySlides {
+  height:100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: cell;
+  height: 5px;
+  width: 5px;
+  margin: 0 5px;
+  background-color: salmon;
+  border-radius: 50%;
+  display: inline-block;
+  transition: #717171 0.4s ease;
+  opacity: 50%;
+  padding-bottom: 2px;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  height: 3px;
+  width: 5px;
+  padding: 3px;
+  color: salmon;
+  font-weight: bold;
+  font-size: 10px;
+  transition: .1s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: salmon;
+  font-size: 16px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: none;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  display: block;
+  text-align:center;
+  font-size: 16pt;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  color:salmon;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: none;
+  color: white;
+} 
+
+@media screen and (min-width: 480px) {
+  .topnav{
+        display:none;
+    }
+}
