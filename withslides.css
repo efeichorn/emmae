@@ -104,6 +104,7 @@ color: #616161;
 
 .slideshow-container {
   width: 80%;
+  outline: 5px dotted green;
   text-align: center;
   position: static;
   padding-top: 70px; 
