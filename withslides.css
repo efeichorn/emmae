@@ -1,7 +1,10 @@
 .nav {
   font-family: 'Lora', serif;
   color: salmon;
-  font-size: 14pt;
+  font-family: narly-outline, sans-serif;
+  font-weight: 400;
+   font-size: 30px;
+	 color: #616161;
   background-color: none;
   display: list-item;
   text-align: left;
@@ -17,9 +20,12 @@
 }
 
 .titleofpage{
-  font-family: 'Lora', serif;
-  font-size: 17pt;
-  color:salmon;
+
+font-family: narly-outline, sans-serif;
+font-weight: 400;
+ font-size: 30px;
+	 color: #616161;
+  
   padding-top: 30px;
   top: 0;
   left: 0;
