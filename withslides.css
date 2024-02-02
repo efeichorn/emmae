@@ -106,6 +106,7 @@ color: #616161;
 
 .slideshow-container {
   width: 80%;
+ float:right;
   outline: 5px dotted green;
   text-align: center;
   position: static;
