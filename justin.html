@@ -166,3 +166,23 @@
                     </div>
   
 </body>
+
+        </div>
+    <!-- script for arrow keys to move slideshow, linked to main.js;
+        solution found @https://www.reddit.com/r/learnjavascript/comments/jsluet/use_left_right_keyboard_arrows_to_change_image_in/-->
+      <script> 
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+                  document.onkeydown = function(e) {
+                      e = e || window.event;
+                      if (e.keyCode == '37') {
+                          plusSlides(-1) //left <- show Prev image
+                      } else if (e.keyCode == '39') {
+                          // right -> show next image
+                          plusSlides(1)
+                      }
+          }
+      </script>
+  </body>
