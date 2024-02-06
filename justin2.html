@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="withslides.css">
+  <link rel="stylesheet" href="https://use.typekit.net/qsj1fug.css">
+  <title>Emma Eichorn</title>
+</head>
+
+<body>
+  <div class="titleofpage">
+    <a href="index.html">Emma Eichorn</a>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade" style="display: block;">
+      <img src="5 (1).jpeg" style="max-height:87vh; max-width:100%;">
+      <div class="text"><i>Installation view, </i>Nesting Tendencies and Swan Lake, 2023</div>
+    </div>
+    <!-- Other slides omitted for brevity -->
+
+    <div style="text-align:center; padding:10px; padding-bottom:10px;">
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <!-- Other navigation dots omitted for brevity -->
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Arrow key navigation
+    document.onkeydown = function(e) {
+      e = e || window.event;
+      if (e.keyCode == '37') {
+        plusSlides(-1); //left <- show Prev image
+      } else if (e.keyCode == '39') {
+        plusSlides(1); // right -> show next image
+      }
+    }
+  </script>
+</body>
+
+</html>
