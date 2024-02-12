@@ -44,4 +44,14 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Function to toggle menu visibility
+    function toggleMenu() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
 
