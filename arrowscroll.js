@@ -45,7 +45,7 @@ function currentSlide(n) {
 }
 
 // Function to toggle menu visibility
-    function toggleMenu() {
+    function myFuncation(){
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
             x.style.display = "none";
