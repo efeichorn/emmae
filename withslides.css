@@ -71,9 +71,9 @@ color: #616161;
 
 
 a {
-  outline-style: dotted;
-  outline-color:#616161;
-  outline-width: thin;
+ 
+   outline: 0;
+
 }
 
 a:link {
