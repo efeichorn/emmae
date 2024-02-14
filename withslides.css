@@ -22,6 +22,17 @@
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
+.img{
+	float:left; 
+
+
+}
+
+
+
+
+
+	
 .titleofpage{
 
 font-family: narly-outline, sans-serif;
