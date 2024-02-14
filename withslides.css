@@ -22,16 +22,19 @@
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
-.img{
-	float:left; 
-            width: 50%; /* Adjust as needed */
+
+
+ .container {
+            display: flex;
+        }
+        
+        .img {
+            flex: 1;
             padding: 20px;
-
-
-}
-.main {
-            float: left;
-            width: 50%; /* Adjust as needed */
+        }
+        
+        .main {
+            flex: 1;
             padding: 20px;
         }
 
