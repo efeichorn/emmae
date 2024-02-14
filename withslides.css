@@ -24,9 +24,16 @@
 
 .img{
 	float:left; 
+            width: 50%; /* Adjust as needed */
+            padding: 20px;
 
 
 }
+.main {
+            float: left;
+            width: 50%; /* Adjust as needed */
+            padding: 20px;
+        }
 
 
 
