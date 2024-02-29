@@ -30,8 +30,8 @@
         
         .img {
             flex: 1;
-            padding: 200px;
-		
+            padding-left: 200px;
+	    padding-top: 40px;
         }
         
         .main {
