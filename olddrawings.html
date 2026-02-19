@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>    Emma Eichorn </title>
-   <link rel="stylesheet" type="text/css" href="style sheet.css">
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-	
 
-    <meta charset="utf-8">
-	<link rel="stylesheet" href="https://use.typekit.net/qsj1fug.css">
+<head>
+  <title>Emma Eichorn</title>
+  <link rel="stylesheet" type="text/css" href="style sheet.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.typekit.net/qsj1fug.css">
 
 </head>
+
 <body>
-	
-<div class="main">
 
-<div class="sidenav">
-	
-	<a href="index.html">Emma Eichorn</a><p>
-	  <a href="Paintings.html">Selected Paintings</a><p>
-  <a href="drawings.html">Drawings</a><p>
- <a href="info.html">Info/Contact</a>
-</div>
+  <div class="main">
+
+    <div class="sidenav">
+
+      <a href="index.html">Emma Eichorn</a>
+      <p>
+        <a href="Paintings.html">Selected Paintings</a>
+      <p>
+        <a href="drawings.html">Drawings</a>
+      <p>
+        <a href="info.html">Info/Contact</a>
+    </div>
 
 
-	<div class="slideshow-container">
-	
+    <div class="slideshow-container">
 
 
-	 <div class="mySlides1">
-	 <figure>
-	<img src="making fire.jpg" style="width:50%">
-		 <figcaption> making fire (sparks fly), spray paint, pastel, pen and charcoal on paper, 10 x12 inches, 2023</figcaption>
-	 </figure>
-		 </div>
-		 
-  <div class="mySlides1">
-     <figure> <img src="vase drawing .jpg" style="width:50%">
-	     <figcaption> Vase drawing, graphite on paper, 2021</figcaption>
-	  </figure>
-	  </div>
-	  
-	
- <div class="mySlides1">
-	 <figure>
-	<img src="pasteldrawing .jpg" style="width:50%">
-		 <figcaption> untitled, pastel on paper, 2022</figcaption>
-	 </figure>
-	   </div>
-	
-	  </div>
-	<div class="mySlides1">
-		<figure>
-		<img src="DSC_3788.jpg" style="width:50%">
-			<figcaption> Untitled, graphite on paper, 2021</figcaption> 
-		</figure>
-		</div>
-	
 
-		  
+      <div class="mySlides1">
+        <figure>
+          <img src="making fire.jpg" style="width:50%">
+          <figcaption> making fire (sparks fly), spray paint, pastel, pen and charcoal on paper, 10 x12 inches, 2023
+          </figcaption>
+        </figure>
+      </div>
 
-	   
-			</div>
-			
-	 
- 
-	
+      <div class="mySlides1">
+        <figure> <img src="vase drawing .jpg" style="width:50%">
+          <figcaption> Vase drawing, graphite on paper, 2021</figcaption>
+        </figure>
+      </div>
+
+
+      <div class="mySlides1">
+        <figure>
+          <img src="pasteldrawing .jpg" style="width:50%">
+          <figcaption> untitled, pastel on paper, 2022</figcaption>
+        </figure>
+      </div>
+
+    </div>
+    <div class="mySlides1">
+      <figure>
+        <img src="DSC_3788.jpg" style="width:50%">
+        <figcaption> Untitled, graphite on paper, 2021</figcaption>
+      </figure>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-</div>
+  </div>
 
-	
-  
 
- 
 
-</div>  
-<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
 
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
+
+  </div>
+  <script>
+    var slideIndex = [1, 1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no] - 1].style.display = "block";
+    }
+  </script>
 </body>
-</html> 
+
+</html>

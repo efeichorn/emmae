@@ -19,26 +19,28 @@
       <div class="text"><i>Installation view, </i>Nesting Tendencies and Swan Lake, 2023</div>
     </div>
     <div class="mySlides fade" style="display: none;">
-                        <img src="Eichorn_Emma_A total lack of restraint_76x101cm_Oiloncanvas.jpg" style="max-height:87vh; max-width:100%;">
-                          <div class="text"><i>A Total Lack of Restraint,</i> Oil oncanvas, 10"x10"</div>
-                      </div>
+      <img src="Eichorn_Emma_A total lack of restraint_76x101cm_Oiloncanvas.jpg"
+        style="max-height:87vh; max-width:100%;">
+      <div class="text"><i>A Total Lack of Restraint,</i> Oil oncanvas, 10"x10"</div>
+    </div>
     <div class="mySlides fade" style="display: none;">
-                        <img src="Eichorn_Emma_A-sweet-and-unfortunate-attachment_60x55_oiloncanvas-.jpeg" style="max-height:87vh; max-width:100%;">
-                          <div class="text"><i>A Sweet and Unfortunate Attachment</i> Oil on Canvas, 7"x10"</div>
-                      </div>
+      <img src="Eichorn_Emma_A-sweet-and-unfortunate-attachment_60x55_oiloncanvas-.jpeg"
+        style="max-height:87vh; max-width:100%;">
+      <div class="text"><i>A Sweet and Unfortunate Attachment</i> Oil on Canvas, 7"x10"</div>
+    </div>
     <!-- Other slides omitted for brevity -->
 
     <div style="text-align:center; padding:10px; padding-bottom:10px;">
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <span class="dot active" onclick="currentSlide(1)"></span>
-       <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
       <!-- Other navigation dots omitted for brevity -->
       <a class="next" onclick="plusSlides(1)">❯</a>
-     
+
     </div>
   </div>
 
@@ -57,8 +59,8 @@
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
@@ -70,7 +72,7 @@
     }
 
     // Arrow key navigation
-    document.onkeydown = function(e) {
+    document.onkeydown = function (e) {
       e = e || window.event;
       if (e.keyCode == '37') {
         plusSlides(-1); //left <- show Prev image

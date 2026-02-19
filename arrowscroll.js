@@ -1,37 +1,40 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-var slideIndex = 1;
-showSlides(slideIndex);
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-// Next/previous controls with arrows
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-    document.onkeydown = function(e) {
-        e = e || window.event;
-        if (e.keyCode == '37') {
-            plusSlides(-1) //left <- show Prev image
-        } else if (e.keyCode == '39') {
-            // right -> show next image
-            plusSlides(1)
-        }
     }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    const prevSlide = slides[slideIndex - 1]
+    if (prevSlide) {
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  }
+
+  // Next/previous controls with arrows
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  document.onkeydown = function(e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+      plusSlides(-1) //left <- show Prev image
+    } else if (e.keyCode == '39') {
+      // right -> show next image
+      plusSlides(1)
+    }
+  }
 });
 
 // Next/previous controls
@@ -45,13 +48,13 @@ function currentSlide(n) {
 }
 
 // Function to toggle menu visibility
-    function myFuncation(){
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
+function myFuncation() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 
