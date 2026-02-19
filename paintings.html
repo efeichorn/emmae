@@ -40,8 +40,13 @@
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      const prevSlide = slides[slideIndex - 1]
+      if (prevSlide) {
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      } else {
+        currentSlide(1)
+      }
     }
     window.dataLayer = window.dataLayer || [];
     function gtag() {dataLayer.push(arguments);}
@@ -90,7 +95,7 @@
       <a href="paintings.html">Paintings</a>
       <a href="drawings.html">Drawings</a>
       <a href="painting-on-paper.html">On paper</a>
-      <a href="TODO - broken link">Archive</a>
+      <!-- <a href="TODO - broken link">Archive</a> -->
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="toggleDisplay()">
@@ -109,19 +114,19 @@
     <li>
       <br> <a href="painting-on-paper.html">On paper</a>
     </li>
-    <br>
-    <li>
-      <a>
-      </a>
-      <div class="dropdown"><a>Archive
-        </a>
-        <div class="dropdown-content"><a>
-          </a><a href="2019.html">2019</a><br>
-          <a href="2018.html">2018</a>
-        </div>
-      </div>
+    <!-- <br> -->
+    <!-- <li> -->
+    <!--   <a> -->
+    <!--   </a> -->
+    <!--   <div class="dropdown"><a>Archive -->
+    <!--     </a> -->
+    <!--     <div class="dropdown-content"><a> -->
+    <!--       </a><a href="2019.html">2019</a><br> -->
+    <!--       <a href="2018.html">2018</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
 
-    </li>
+    <!-- </li> -->
     <li>
       <br> <a href="info.html">Info</a>
     </li>
@@ -154,7 +159,7 @@
 
     <div class="mySlides fade" style="display: none;">
       <img src="watching grSS GROW.JPG" style="max-height:87vh; max-width:100%;">
-      <div class="text"><i>TODO,</i> include title</div>
+      <div class="text"><i>Untitled,</i> Oil on canvas, 2023</div>
     </div>
 
     <div class="mySlides fade" style="display: none;">
@@ -215,6 +220,7 @@
       <span class="dot" onclick="currentSlide(10)"></span>
       <span class="dot" onclick="currentSlide(11)"></span>
       <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
       <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
 
