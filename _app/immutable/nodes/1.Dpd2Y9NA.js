@@ -1,0 +1,1 @@
+import{U as e,h as t,y as n}from"../chunks/BnFGFQLc.js";import"../chunks/xihTtKlq.js";function r(r){e(),t(r,n(`page not found`))}export{r as component};
